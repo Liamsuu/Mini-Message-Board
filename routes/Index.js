@@ -4,7 +4,7 @@ const { Router } = require("express");
 const router = Router();
 
 // creating dummy message content
-const messages = [
+let messages = [
   {
     text: "Hi there!",
     user: "Amando",
@@ -22,4 +22,4 @@ router.get("/", (req, res) => {
   res.render("index", { messages: messages });
 });
 
-module.exports = router;
+module.exports = { router, messages };
