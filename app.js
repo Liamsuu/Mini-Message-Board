@@ -1,7 +1,8 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
-const homeRouter = require("./routes/Index");
-const newMessageRouter = require("./routes/NewMessage");
+const homeRouter = require("./routes/IndexRouter");
+const newMessageRouter = require("./routes/NewMessageRouter");
 const path = require("node:path");
 
 // setting up ejs
