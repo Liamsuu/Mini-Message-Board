@@ -17,4 +17,6 @@ app.use("/new", newMessageRouter);
 
 // setting up server port listener
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Server listening on port ${port}!`));
+app.listen(port, "0.0.0.0", () =>
+  console.log(`Server listening on port ${port}!`)
+);
